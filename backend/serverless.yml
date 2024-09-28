@@ -9,8 +9,8 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: handler.sendRequest
     events:
       - httpApi:
           path: /
-          method: get
+          method: POST
